@@ -1,0 +1,192 @@
+
+/* ============================
+   スマホ版（768px以下）
+============================ */
+@media (max-width: 768px) {
+
+  /* 全体の設定 */
+  body {
+    margin: 0;
+    padding: 0;
+  }
+
+  /* -------- HERO -------- */
+  .hero {
+    height: auto;
+    padding: 40px 20px 120px;
+    background-position: center top;
+    background-size: cover;
+    position: relative;
+  }
+
+  .hero-inner h1 {
+    position: static;      /* absolute を解除して自然に上に配置 */
+    transform: none;
+    font-size: 22px;       /* ←文字をスマホ最適化 */
+    margin-bottom: 20px;
+    text-align: center;
+    padding: 0 10px;
+    line-height: 1.6;
+  }
+
+  .hero-inner p {
+    position: static;
+    transform: none;
+    font-size: 16px;
+    line-height: 1.6;
+    margin-bottom: 40px;
+    text-align: center;
+    padding: 0 10px;
+  }
+
+  .botan {
+    position: static;
+    text-align: center;
+    margin-top: 20px;
+  }
+
+  .btn {
+    font-size: 16px;
+    padding: 12px 24px;
+  }
+
+}
+  /* --- プロフィール全体 --- */
+  .profile {
+    padding: 20px 0;
+  }
+
+  /* --- 横並びを縦並びに変更 --- */
+  .profile-box {
+    display: block;       /*←横並び解除！*/
+    text-align: center;
+    gap:0;
+     margin: 0 auto 40px;
+  }
+
+  /* --- プロフィール画像 --- */
+  .profile-img img {
+    width: 140px;         /* スマホでは小さめ */
+    height: auto;
+    border-radius: 20px;
+    margin: 0 auto 20px;
+    display: block;
+    object-fit: cover;
+  }
+
+  /* --- リスト部分（テキスト） --- */
+  .profile-list {
+    padding: 0;
+    margin: 0 auto;
+    width: 90%;           /* 横幅を読みやすく */
+    text-align: left;
+    
+  }
+
+  .profile-list li {
+    margin-bottom: 10px;
+    margin-left: 0;
+        font-size: 14px;
+        line-height: 1.6;
+  }
+
+  /* --- 下のプロフィール説明文 --- */
+  .profile-text p {
+    width: 90%;
+    margin: 0 auto ;
+    font-size: 14px;
+    line-height: 1.7;
+    text-align: left;
+  }
+@media (max-width: 768px) {
+
+  /* ★ セクション全体に余白を付けて切れないようにする */
+  .henka {
+    padding: 40px 20px;
+    text-align: center;
+  }
+
+  /* ★ タイトルの横並びを解除して縦配置に */
+  .henka-title {
+    display: block;   /* ← flex解除！ */
+  }
+
+  /* ★ 看板画像（スマホは小さくてOK） */
+  .kanban-img,
+  .henka-icon {
+    width: 60px;
+    height: auto;
+    margin: 0 auto 10px;
+    display: block;
+  }
+
+  /* ★ h2を折り返し可能にする */
+  .henka-title h2 {
+    white-space: normal !important;  /* ← 折り返しON */
+    word-break: break-word !important;
+    font-size: 20px;
+    line-height: 1.4;
+    padding: 0 10px;  /* ← 左右の切れ防止 */
+    margin-top: 10px;
+  }
+
+  /* ★ リスト部分の横切れ防止 */
+  .henka-list {
+    padding-left: 20px;
+    padding-right: 10px;
+    text-align: left;
+    margin-top: 20px;
+  }
+
+  .henka-list li {
+    font-size: 15px;
+    line-height: 1.6;
+    margin: 12px 0;
+  }
+
+  /* 矢印 */
+  .yajirushi {
+    margin: 25px 0;
+    font-size: 28px;
+    text-align: center;
+  }
+}
+
+.last-text{
+  font-size: 14px;
+  margin-left: 15px;
+}
+@media (max-width: 768px) {
+
+  /* リスト全体を中央に寄せる */
+  .sanka-list {
+      text-align: left;
+      margin: 0 auto;
+      padding: 0 20px;
+      width: 100%;
+      max-width: 90%;
+  }
+
+  /* チェックマークとテキストを中央付近に揃える */
+  .sanka-list li {
+      padding-left: 35px;     /* スマホ用に小さめの余白に調整 */
+      transform: none;        /* ←ここ！ズレの原因を解除 */
+      font-size: 16px;
+  }
+
+  /* チェックアイコンの位置も調整 */
+  .sanka-list li::before {
+      left: 0;
+      top: 4px;
+      width: 22px;
+      height: 22px;
+  }
+
+  /* 背景丸もスマホ用サイズに */
+  .sanka-box {
+      width: 100%;
+      margin: 0 auto;
+      padding: 40px 20px;
+      border-radius: 999px;
+  }
+}

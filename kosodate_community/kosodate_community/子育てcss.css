@@ -1,0 +1,539 @@
+@charset "UTF-8";
+.hero{
+    background-image: url(1920background-img.jpg);
+    height: 650px;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    color: #4c4c4c;
+    background-repeat: no-repeat;
+}
+.hero-inner h1{
+    position: absolute;
+    top: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+    font-size: 36px;
+}
+.hero-inner p{
+    position: absolute;
+    top: 250px;
+    left:40px;
+    font-size: 20px;
+    line-height: 1.6;
+    letter-spacing: 2px;
+    text-shadow: 2px 2px 6px rgba(0,0,0,0.3);
+}
+.botan{
+    position: absolute;
+    bottom:50px;
+    right:40px;
+}
+.btn{
+    display: inline-block;
+    background-color: #F9C8D0;
+    padding: 12px 30px;
+    color: #454343;
+    text-decoration: none;
+    border-radius: 25px;
+    font-weight: 600;
+    transition: background-color 0.3s ease; transform :0.3s ease;
+}
+.btn:hover{
+    background-color: #e88ca0;
+    transform: scale(1.05);
+}
+/*悩みセクション*/
+.nayami{
+    text-align: center;
+    padding: 80px 20px;
+}
+.nayami h2{
+    font-size: 28px;
+    margin-top: 60px;
+    margin-bottom: 60px;
+    color: #4c4c4c;
+    line-height: 1.6;
+    letter-spacing: 2px;
+    text-decoration: underline;
+    text-decoration-color: #F9C8D0;
+}
+.nayami p{
+    font-size: 18px;
+    color: #4c4c4c;
+    line-height: 1.8;
+    letter-spacing: 1.5px;
+    margin-bottom: 40px;
+}
+.nayami-list{
+    display: flex;
+    justify-content: center;
+    gap: 60px;
+    flex-wrap: wrap;
+    margin-bottom: 40px;
+}   
+.nayami-item{
+    background-image: url(koimaru.png);
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 10px;
+    width: 200px;
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: 16px;
+    letter-spacing: 1.6;
+    color: #4c4c4c;
+}
+.nayami-item2{
+    background-image: url(pinkmaru.png);
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 10px;
+    width: 200px;
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: 16px;
+    letter-spacing: 1.6;
+    color: #4c4c4c;
+}
+
+.line{
+    width: 100vw;
+    height: 40px;
+    background-image: url(dottoline.png);
+    background-repeat: repeat-x ;
+    background-size: contain;
+    background-position: center;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    margin: 60px 0;
+}
+/* ここから自己紹介セクションのスタイル */
+.section-title{
+    text-align: center;
+    padding: 60px 20px;
+    font-size:28px;
+}
+.profile-box{
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 150px;
+    margin:0 auto 60px ;
+    max-width: 1000px;
+    padding: 0 20px;
+    }
+.profile-img img {
+    width: 140px;
+    height: auto;
+    border-radius: 20px;
+    object-fit: cover;
+    display: block;
+    margin: 0 auto;
+}
+
+.profile-list ul{
+    list-style: none;
+    padding: 0;
+    }
+.profile-list li{
+    margin-left: 40px;
+    
+    }
+.profile-text{
+    font-size: 18px;
+    color: #4c4c4c;
+    line-height: 1.8;
+    letter-spacing: 1.5px;
+    max-width: 550px;
+    margin:0 auto;
+}
+/* ここから相談セクションのスタイル */
+.henka{
+    text-align: center;
+}
+.henka-title{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+}   
+.henka-title h2{
+    margin: 0;
+    white-space: nowrap;/* タイトルの折り返し防止 */
+}
+.kanban-img{
+    width: 100px;
+    height: auto;
+}
+/* 共通設定 */
+.henka-list {
+    list-style: none;      /* デフォの黒ポチを消す */
+    padding: 0;
+    margin: 40px 0;
+    width: fit-content;
+    margin: 0 auto;
+}
+
+.henka-list li {
+    position: relative;
+    padding-left: 40px;    /* アイコンの分の余白 */
+    margin-bottom: 20px;
+    line-height: 1.6;
+    color: #333;
+    font-size: 18px;
+    text-align: left;
+}
+
+/* 上段リスト（濃いピンクの丸） */
+.top-list li::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 5px;
+    width: 28px;
+    height: 28px;
+    background-image: url('koimaru.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+/* 下段リスト（薄いピンクの丸） */
+.bottom-list li::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 5px;
+    width: 28px;
+    height: 28px;
+    background-image: url('pinkmaru.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+.yajirushi{
+    text-align: center;
+    font-size: 48px;
+    color: #F9C8D0;
+    margin: 20px 0;
+}
+.kokonara{
+    text-align: center;
+    font-size: 24px;
+    color: #4c4c4c;
+    line-height: 1.6;
+    letter-spacing: 1.5px;
+    margin: 60px 20px;
+    padding: 70px 20px;
+}
+/* ふわっと丸い背景 */
+.sanka {
+    font-size: 18px;
+    text-align: center;
+    width: 100%;
+    padding: 80px 20px;
+    justify-content: center;
+}
+
+.sanka-inner {
+    background: #f3cdd7; /* ピンク色 */
+    padding: 40px 25px;
+    border-radius: 300px;
+    max-width: 650px;
+    width: 90%;
+    margin: 0 auto 40px;
+    box-sizing: border-box;
+    box-shadow: 0 0 40px rgba(0,0,0,0.05)inset;
+
+    /* ふわっと感 */
+    box-shadow: 0 0 40px rgba(0,0,0,0.05) inset;
+}
+
+.sanka-list {
+    text-align: left;
+    list-style: none;
+    padding: 40px 20px;
+    margin: 0 auto;
+    max-width: 600px;
+}
+
+.sanka-list li {
+    font-size: 18px;
+    line-height: 1.8;
+    letter-spacing: 1.5px;
+    margin-bottom: 18px;
+    position: relative;
+    padding-left: 100px;
+    transform: translateX(40px);
+}
+
+/* チェックアイコン */
+.sanka-list li::before {
+    content: "✔";
+    position: absolute;
+    left: 0;
+    top: 0;
+    color: #666;
+    font-size: 20px;
+}
+
+
+/*ここから参加条件リスト*/
+.botan2{
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 80px;
+}
+.btn2{
+    display: inline-block;
+    background-color: #F9C8D0;
+    padding: 12px 30px;
+    color: #454343;
+    text-decoration: none;
+    border-radius: 25px;
+    font-weight: 600;
+    transition: background-color 0.3s ease; transform :0.3s ease;
+}
+.btn2:hover{
+    background-color: #e88ca0;
+    transform: scale(1.05);
+}
+
+/*参加方法セクション*/
+.line2{
+    width: 100vw;
+    height: 40px;
+    background-image: url(line5.png);
+    background-repeat: repeat-x ;
+    background-size: contain;
+    background-position: center;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    margin: 60px 0;
+}
+
+.houhou{
+    text-align: center;
+    font-size: 22px;
+    color: #4c4c4c;
+    line-height: 1.8;
+    letter-spacing: 1.5px;
+    max-width: 700px;
+    margin:0 auto;
+    padding:60px 20px;
+}
+.houhou-list{
+    font-size:18px;
+    text-align: left;
+    color: #4c4c4c;
+
+    margin:0 auto;
+    width:fit-content;
+    list-style:none;
+    gap:40px;
+    line-height: 1.8;
+    letter-spacing: 1.5px;
+    }
+    /*参加すると*/
+.sanka-note h2{
+    text-align: center;
+    font-size: 28px;
+    color: #4c4c4c;
+    line-height: 1.8;
+    letter-spacing: 1.5px;
+    max-width: 700px;
+    margin:0 auto;
+}
+.sanka-note-list{
+    font-size:20px;
+    text-align: left;
+    padding: 30px 20px;
+    margin:0 auto;
+    width:fit-content;
+    list-style:none;
+    gap:40px;
+    line-height: 1.8;
+    letter-spacing: 1.5px;
+}
+.sanka-note-list li {
+    position: relative;
+    list-style:none;
+    padding-left: 30px;    /* アイコンの分の余白 */
+    margin-bottom: 14px;
+    line-height: 1.6;
+    color: #333;
+    font-size: 18px;    
+}
+.sanka-note-list li::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 5px;
+    width: 28px;
+    height: 28px;
+    background-color: url('pinkmaru.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+.sanka-note-text{
+    text-align: center;
+    font-size: 22px;
+    color: #4c4c4c;
+    line-height: 1.8;
+    letter-spacing: 1.5px;
+    max-width: 700px;
+    margin:0 auto;
+    padding:80px;
+}
+/*お気軽*/
+.okigaru-text{
+    text-align: center;
+    font-size: 28px;
+    color: #4c4c4c;
+    line-height: 1.8;
+    letter-spacing: 1.5px;
+    max-width: 700px;
+    margin:0 auto;
+    padding:80px 20px;
+}
+/*ラストパート*/
+.last-wrapper {
+    max-width: 900px;  /* セクション全体を中央に揃える */
+    margin: 0 auto;
+    padding: 40px 20px;
+}
+
+.last-title{
+    text-align: left;
+    font-size: 35px;
+    color: #4c4c4c;
+    line-height: 1.8;
+    letter-spacing: 1.5px;
+    max-width: 700px;
+    margin:0 auto;
+    padding:80px 20px 40px ;
+}
+.last-text{
+    background-image: url(flower.png);
+    background-size:150px auto;
+    background-position: right 60px bottom 20px;
+    background-repeat: no-repeat;
+    font-size: 22px;
+    padding-bottom: 120px;
+    width:100%;
+    padding: 70px 40px  120px;
+    text-align: left;
+    color: #4c4c4c;
+    line-height: 1.8;
+    letter-spacing: 1.5px;
+    max-width: 700px;
+    margin:0 auto;
+}
+section.last-wrapper p.last-text {
+  font-size: 22px !important;
+}
+
+
+
+.tyuui{
+    text-align: center;
+    font-size: 16px;
+    color: #4c4c4c;
+    line-height: 1.6;
+    letter-spacing: 1.5px;
+    margin-bottom: 40px;
+}
+
+.houhou-wrap {
+    max-width: 700px;
+    margin: 0 auto;
+}
+/* ==============================
+参加方法セクション（PC & SP）
+============================== */
+
+.houhou-section {
+    position: relative;
+    width: 100%;
+    padding: 200px 0 120px; 
+    background-image: url(kanban2_l.png);
+    background-repeat: no-repeat;
+    background-position: center top;
+    background-size: 750px auto;   /* 500×278 の実寸 */
+    text-align: center;
+}
+
+/* テキストを看板の上に重ねる */
+.houhou-text {
+    position: absolute;
+    top: 150px;        /* 看板の板部分の高さに合わせる（調整可能） */
+    left: 50%;
+    transform: translateX(-50%);
+    width: 90%;
+    margin-top: -120px;  /* 看板の影部分を避けるために少し上に移動 */
+    letter-spacing: 1.3px;
+}
+
+.houhou-text h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.houhou-text ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    font-size: 18px;
+    line-height: 1.8;
+}
+
+/* ======= スマホ用（768px以下） ======= */
+@media (max-width: 768px) {
+
+    /* 参加方法：全体 */
+    .houhou-section {
+        position: relative;
+        width: 100%;
+        background-image: url(kanban2_l.png);
+        background-repeat: no-repeat;
+        background-position: center 120px;  /* ←完全に中央寄せ ＋ ちょい下げ */
+        background-size: 95% auto;        /* ←95%だと横切れするので微調整 */
+        padding: 120px 0 160px;           /* ←マイナスは禁止！安全に上下余白を確保 */
+        text-align: center;
+    }
+
+    /* h2：看板の上に飛び出させる */
+    .houhou-text h2 {
+        font-size: 20px;
+        margin: 0 auto 25px;
+        position: relative;
+        top: -10px;   /* ←もっと美しく上に！ */
+    }
+
+    /* リスト：看板の中央に乗せる */
+    .houhou-text {
+        position: absolute;
+        top: 200px;     /* ←看板の中央あたりに調整 */
+        width: 85%;      /* ←左右の余白を均等に */
+        left:50%;
+        transform: translateX(-50%);
+    }
+
+    .houhou-text ul {
+        list-style: none;
+        padding: 0;
+        font-size: 14px;
+        line-height: 1.6;
+    }
+}
+
